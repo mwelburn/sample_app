@@ -32,6 +32,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'rspec-rails'
+  gem 'annotate', :require => false
 end
 
 group :test do
