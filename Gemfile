@@ -30,6 +30,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'gravatar_image_tag'
+
 group :development do
   gem 'rspec-rails'
   gem 'annotate', :require => false
@@ -39,6 +41,7 @@ group :test do
   gem 'rspec'
   gem 'webrat'
   gem 'spork', '0.9.0.rc5'
+  gem 'factory_girl_rails'
 end
 
 group :production do
