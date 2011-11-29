@@ -29,6 +29,11 @@ class User < ActiveRecord::Base
     #implicitly returns nil if we get this far
   end
   
+  def self.authenticate_with_salt(id, cookie_salt)
+    user = find_by_id(id)
+    (user && user.salt == cookie_salt) ? user : nil
+  end
+  
   private
   
     def encrypt_password
