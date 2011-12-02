@@ -45,6 +45,14 @@ a {
   text-decoration: none;
 }
 
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+
 a:hover {
   color: #069;
   text-decoration: underline;
